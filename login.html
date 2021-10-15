@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Login</title>
+<link href="websiteDecor.css" rel="stylesheet" type="text/css">
+<!--google fonts-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+<!--google fonts end-->
+</head>
+
+<body>
+<!-- TODO: add logo later-->
+<div id="logo"><a href="index.html">Cooking and Baking</a></div>
+<div id ="formWrapper">
+  <div id="formHeader">Login</div>
+  <br>
+  <form name="login" action="account.html">
+    <label>Username:</label>
+    &emsp;
+    <input name="username" type="text">
+    <br>
+    <label>Password:</label>
+    &emsp;
+    <input type="password" name="txtPassword" id="pword">
+    <br>
+    <input type="checkbox" onclick="myFunction()">Show Password
+    <br>
+    <br>
+    <input type="submit" id="loginButton" onclick="return Validate(this.form)">
+    <br>
+  </form>
+  <p>Don't have an account yet? <a href="signUp.html">Sign up here.</a></p>
+</div>
+</body>
+<!-- TODO: clean up script-->
+<script type="text/javascript">
+    function Validate(form) {
+      var password = form.txtPassword.value;
+
+      var email = form.newEmail.value;
+    }
+
+
+    function myFunction() {
+      var x = document.getElementById("pword");
+      if (x.type === "password") {
+        x.type = "text";
+      } else {
+        x.type = "password";
+      }
+    }
+	function callAPI(form) {
+				console.log("stuff");
+
+//	var a = form.title.value;
+//    var b = form.servings.value;
+//    var c = form.description.value;
+//	var d = form.notes.value;
+//	var inputOne = document.getElementsByName('ingredients[]');
+//	var inputTwo = document.getElementsByName('instructions[]');
+//
+//    if (a != null && b != null && c != null && d != null && inputOne[0].value != "" && inputTwo[0].value != "") {
+//	var a = "";
+//		for (var i = 0; i < inputOne.length; i++) {
+//			 a = a + inputOne[i].value + " ";
+//		}
+//	var b = "";
+//		for (var i = 0; i < inputTwo.length; i++) {
+//			 b = b + inputTwo[i].value + " ";
+//		}
+//
+//            const obj = [{
+//                title: form.title.value,
+//                servings: parseInt(form.servings.value),
+//                ingredients: a,
+//                instructions: b,
+//                description: form.description.value,
+//                notes: form.notes.value,
+//            }];
+//            const json = JSON.stringify(obj);
+//	console.log(json);
+////	console.log(a);
+//            const xhttp = new XMLHttpRequest();
+//            xhttp.open("POST", "http://localhost:8080/new");
+//            xhttp.setRequestHeader("Content-type", "application/json");
+//            xhttp.send(json);
+//	}
+	}
+</script>
+</html>

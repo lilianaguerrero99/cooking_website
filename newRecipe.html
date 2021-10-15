@@ -1,0 +1,185 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>New Recipe</title>
+<link href="websiteDecor.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<!--	TODO: fix navbar-->
+<div id="navbar">
+  <div id="navbarHeader"> Cooking and Baking </div>
+  <div id="menuOptions"> 
+	  <a href="index.html">Home </a>
+	  <a href="signUp.html" target="_blank">Sign Up</a> 
+	  <a href="login.html">Login</a> 
+    <!--	  <a id="logIn" onClick="updateLogin()" href="account.html">Account</a>--> 
+  </div>
+</div>
+<form class="form-inline" name="newRecipe">
+  <div id="recipeWrapper">
+    <div id="uploadImg">
+      <label for="file" id="uploadLabel" style="cursor: pointer;">Upload Image</label>
+      <img alt="Image of food" id="output"/> </div>
+    <input accept="image/*"  id="file" name="image" onchange="loadFile(event)"  style="display: none;" type="file">
+    <div id="recipeDescription">
+      <label class = "recipeLables">Title:</label>
+		<input name="title" required type="text">
+      <label class = "recipeLables">Serving Size:</label><input min="1" name="servings" required type="number">
+      <br>
+      <label class = "recipeLables">Description:</label>
+		<textarea name="description"></textarea>
+			  <input onClick="removeImg()" type="button" value="remove">
+    </div>
+  </div>
+
+  <div>
+  <div id="directions">
+    <p><b>Directions: </b></p>
+    <label>Step 1:</label>
+	  <input name="instructions[]" required type="text">
+    <br>
+  </div>
+  <br>
+  <input onclick="appendDirections()" type="button" value="Add item">
+  <input onclick="removeDirections()" type="button" value="Remove item">
+  <div id="ingredients" >
+    <p><b>Ingredients (with measurements if needed): </b></p>
+    <input name="ingredients[]" required type="text">
+    <br>
+  </div>
+  <br>
+  <input onclick="appendIngredients()" type="button" value="Add item">
+  <label>Additional Notes: </label>
+  <textarea name="notes"></textarea>
+    </div>
+  <input onclick="callAPI(this.form)" type="submit" value="Create Order">
+</form>
+</body>
+<!--	TODO: clean up script-->
+<script>
+	var count = 0; // There is 1 item already
+	var elementID, stepsID, newP, newInput;
+    function appendDirections() {
+            // Get the item div element
+            var directions = document.getElementById('directions');
+            // Good to do error checking, make sure we managed to get something
+            if (directions) {
+					count++;
+                     newP = document.createElement('p');
+				newP.id = stepsID = "steps" + count;                    newP.innerHTML = 'Step ' + (count + 1);
+                    // Create the new text box
+                     newInput = document.createElement('input');
+				newInput.id = elementID = "a" + count;
+                    newInput.type = 'text';
+                    newInput.name = 'instructions[]';
+				console.log(elementID);
+                    // Good practice to do error checking
+                    if (newInput && newP) {
+                        // Add the new elements to the form
+                        directions.appendChild(newP);
+                        directions.appendChild(newInput);
+                        // Increment the count
+                    }
+                }
+            }
+	function removeDirections(){
+		if(count > 0){
+			var element = document.getElementById(elementID);
+			var steps = document.getElementById(stepsID);
+
+			element.remove();
+			steps.remove();
+			count = count -1;
+			elementID = "a" + count;
+			stepsID = "steps" + count;
+
+		}else{
+			window.alert("You must have at least one step");
+		}
+	}
+	function appendIngredients() {
+            // Get the item div element
+            var ingredients = document.getElementById('ingredients');
+            // Good to do error checking, make sure we managed to get something
+            if (ingredients) {
+				// Create the new text box
+                    var newInput = document.createElement('input');
+                    newInput.type = 'text';
+                    newInput.name = 'ingredients[]';
+                    // Good practice to do error checking
+				if(newInput) {
+                        // Add the new elements to the form
+                        //ingredients.appendChild(newP);
+                        ingredients.appendChild(newInput);
+                        // Increment the count
+                        count++;
+                    }
+                }
+            }
+		var image = document.getElementById('output');
+		var label = document.getElementById('uploadLabel');
+
+		image.style.display = "none";
+
+var loadFile = function(event) {
+label.style.display = "none";
+	image.style.display = "block";
+	image.src = URL.createObjectURL(event.target.files[0]);
+
+}
+function removeImg (){
+	image.src = "";
+			image.style.display = "none";
+	label.style.display = "block";
+}
+function callAPI(form) {
+	var a = form.title.value;
+    var b = form.servings.value;
+    var c = form.description.value;
+	var d = form.notes.value;
+	var inputOne = document.getElementsByName('ingredients[]');
+	var inputTwo = document.getElementsByName('instructions[]');
+//
+    if (a != null && b != null && c != null && inputOne[0].value != "" && inputTwo[0].value != "") {
+	var a = "";
+		for (var i = 0; i < inputOne.length; i++) {
+			if(i == inputOne.length -1){
+			 a = a + inputOne[i].value;
+			}else{
+			 a = a + inputOne[i].value + ", ";
+			}
+		}
+	var b = "";
+		for (var i = 0; i < inputTwo.length; i++) {
+			if(i == inputTwo.length -1){
+			 b = b + inputTwo[i].value;
+			}else{
+			 b = b + inputTwo[i].value + ", ";
+
+			}
+		}
+
+            const obj = [{
+                title: form.title.value,
+                servings: parseInt(form.servings.value),
+                ingredients: a,
+                instructions: b,
+                description: form.description.value,
+                notes: form.notes.value,
+            }];
+            const json = JSON.stringify(obj);
+	console.log(json);
+	console.log(a);
+            const xhttp = new XMLHttpRequest();
+            // xhttp.open("POST", "http://localhost:8080/new");
+            // xhttp.setRequestHeader("Content-type", "application/json");
+            // xhttp.send(json);
+        }else{
+			window.alert("One or more field is empty. Please go back and make sure all field are filled in.");
+		}
+}
+
+</script>
+</html>
