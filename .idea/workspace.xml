@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7842a586-9adb-45df-8614-06046ddbcd19" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account.html" beforeDir="false" afterPath="$PROJECT_DIR$/account.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/websiteDecor.css" beforeDir="false" afterPath="$PROJECT_DIR$/websiteDecor.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -36,7 +39,8 @@
       <updated>1634267345156</updated>
       <workItem from="1634267346329" duration="6753000" />
       <workItem from="1634276468483" duration="348000" />
-      <workItem from="1634598940736" duration="161000" />
+      <workItem from="1634598940736" duration="365000" />
+      <workItem from="1636530160824" duration="2596000" />
     </task>
     <servers />
   </component>
@@ -48,6 +52,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="400" y="211" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1280.680@0.0.1280.680" timestamp="1634270509223" />
+    <state x="422" y="96" key="FileChooserDialogImpl" timestamp="1634599306535">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="422" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1634599306535" />
     <state x="150" y="0" key="SettingsEditor" timestamp="1634276504052">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
