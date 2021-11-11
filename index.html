@@ -11,7 +11,7 @@
 <header>Cooking and Baking</header>
 <nav>
     <ul>
-        <li>HOME</li> |
+        <a href="index.html"><li>HOME</li></a> |
         <a href="account.html"><li>ACCOUNT</li></a> |
         <li>LOGIN</li> |
         <li>SIGN UP</li> |
@@ -20,6 +20,39 @@
     </ul>
 </nav>
 <body>
+<div id>
+    <div >Login</div>
+    <br>
+    <form name="login" action="account.html">
+        <label>Email:</label>
+        &emsp;
+        <input name="username" type="email">
+        <br>
+        <label>Password:</label>
+        &emsp;
+        <input type="password" name="txtPassword" id="pword">
+        <br>
+        <input type="checkbox" onclick="myFunction()">Show Password
+        <br>
+        <br>
+        <input type="submit" onclick="return Validate(this.form)">
+        <br>
+    </form>
+    <p>Don't have an account yet? <a href="signUp.html">Sign up here.</a></p>
+</div>
+<div id ="formWrapper">
+    <div id="formHeader">Sign up</div><br>
+    <form name="newAccount" action="account.html">
+        <label>First name:</label>&emsp;<input name="fullName" type="text"><br>
+        <label>Email:</label>&emsp;<input name="newEmail" type="email"><br>
+        <label>Password:</label>&emsp;<input type="password" name="txtPassword"><br>
+        <label>Re-enter Password:</label>&emsp;<input type="password" name="txtConfirmPassword"><br>
+        <input type="checkbox" onclick="myFunction()">Show Password
+        <br><br>
+        <input type="submit" id="loginButton" onclick="return Validate(this.form)"><br>
+    </form>
+    <p>Already have an account? <a href="login.html">Login here.</a></p>
+</div>
 <div >
 <div class="row" id="gallery">
     <div class="column">

@@ -20,24 +20,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7842a586-9adb-45df-8614-06046ddbcd19" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/temp_pictures/eight.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/temp_pictures/five.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/temp_pictures/four.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/temp_pictures/nine.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/temp_pictures/one.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/temp_pictures/seven.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/temp_pictures/six.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/temp_pictures/ten.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/temp_pictures/three.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/temp_pictures/two.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accountSetting.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/me.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account.html" beforeDir="false" afterPath="$PROJECT_DIR$/account.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eatSign.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/friends_duo.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/websiteDecor.css" beforeDir="false" afterPath="$PROJECT_DIR$/websiteDecor.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newRecipe.html" beforeDir="false" afterPath="$PROJECT_DIR$/newRecipe.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/search_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signUp.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -52,6 +58,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -75,7 +82,8 @@
       <workItem from="1634267346329" duration="6753000" />
       <workItem from="1634276468483" duration="348000" />
       <workItem from="1634598940736" duration="365000" />
-      <workItem from="1636530160824" duration="5509000" />
+      <workItem from="1636530160824" duration="5688000" />
+      <workItem from="1636601917811" duration="3492000" />
     </task>
     <servers />
   </component>
@@ -92,11 +100,16 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="372" y="88" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1636604972005">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="372" y="88" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680@0.0.1280.680" timestamp="1636604972005" />
     <state x="400" y="211" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1634270509223">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

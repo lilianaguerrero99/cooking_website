@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="cookie-solid.svg">
+
+    <title>Settings</title>
+    <link href="websiteDecor.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+
+</head>
+<header>Cooking and Baking</header>
+<nav>
+    <ul>
+        <a href="index.html"><li>HOME</li></a> |
+        <a href="account.html"><li>ACCOUNT</li></a> |
+        <a href="about.html"><li>ABOUT</li></a>
+
+    </ul>
+</nav>
+<body>
+<div>
+    <div>
+        <img src="me.jpg" width="200" height="200">
+        <button onclick="changePicture()">CHANGE PICTURE</button>
+    </div>
+    <div>
+        <div><p>Liliana</p> <p onclick="changeName()">CHANGE NAME</p></div>
+        <div>
+            <label>Firstname:</label>
+            &emsp;
+            <input name="fname" type="text" required>
+
+        </div>
+    </div>
+</div>
+
+<div>
+    <h2>Change Email</h2>
+    <label>New Email:</label>
+    &emsp;
+    <input name="newEmail" type="email">
+    <button>CHANGE</button>
+</div>
+
+<div>
+    <h2>Change Password</h2>
+    <label>Old Password:</label>
+    &emsp;
+    <input name="oldPassword" type="password">
+    <label>New Password:</label>
+    &emsp;
+    <input name="newPassword" type="password">
+    <label>Re-enter New Password:</label>
+    &emsp;
+    <input name="reenterNewPassword" type="password">
+    <button>CHANGE</button>
+</div>
+
+<div>
+    <h2>Close Account</h2>
+    <label>Reasoning</label>
+
+    <textarea></textarea>
+    <button>CLOSE</button>
+
+</div>
+
+</body>
+<div class="footer-basic">
+    <footer>
+        <div class="social">
+            <a href="#"><i class="icon ion-social-instagram"></i></a>
+            <a href="#"><i class="icon ion-social-snapchat"></i></a>
+            <a href="#"><i class="icon ion-social-twitter"></i></a>
+            <a href="#"><i class="icon ion-social-facebook"></i></a>
+        </div>
+
+        <ul class="li">
+            <li>HOME</li>
+            <li>ACCOUNT</li>
+            <li>ABOUT</li>
+        </ul>
+        <p class="copyright">© 2021</p>
+    </footer>
+</div>
+</html>

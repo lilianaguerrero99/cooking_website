@@ -6,22 +6,53 @@
 
   <title>About</title>
 <link href="websiteDecor.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+
 </head>
 <!--	TODO: fix navbar and add javascript-->
+<header>Cooking and Baking</header>
+<nav>
+  <ul>
+    <a href="index.html"><li>HOME</li></a> |
+    <a href="account.html"><li>ACCOUNT</li></a> |
+    <a href="about.html"><li>ABOUT</li></a>
 
+  </ul>
+</nav>
 <body>
-<div id="navbar">
-  <div id="navbarHeader"> Cooking and Baking </div>
-  <div id="menuOptions"> <a href="index.html">Home </a> <a id="signUp" onClick="updateLogin()" href="signUp.html" target="_blank">Sign Up</a> <a id="logOut" onClick="updateLogin()" href="login.html">Login</a> 
-    <!--	  <a id="logIn" onClick="updateLogin()" href="account.html">Account</a>--> 
+<!--About me area-->
+<div>
+  <div>
+    <img src="me.jpg" width="300" height="300">
+  </div>
+  <div>
+    <h1>A little about me...</h1>
+    <p>Hi! My name is Liliana, and I'm the owner and creator of this website. Originally, I was set on just adding my recipes and sharing with the world, but decided it was best for other to share their recipes if they wanted too. Please fell free to contact me anytime if you having problems with the website, or for any other reasons. I usually take a day to respond.</p>
   </div>
 </div>
-<div id="aboutWrapper">
-  <div id="picture"> <img src="eatSign.jpg" id="pictureLocation" alt="picture or owners"> </div>
-  <div id="aboutContent">
-    <h1>Hi, we are Lili and Marie!</h1>
-    <p>We would like to welcome you to our cooking website. This site was create for people all around the world to share ideas and get inspired.We decide to include both cooking and baking, because cooking represent me [Marie] and baking repsents me [Lili].</p>
-  </div>
+
+<!--contact area-->
+<div>
+  <h1>Contact Information</h1>
+  <p>Email: lilianaguerrero99@yahoo.com</p>
+  <p>Address: 1234 Fake Lane San Diego, CA 90210</p>
 </div>
 </body>
+<div class="footer-basic">
+  <footer>
+    <div class="social">
+      <a href="#"><i class="icon ion-social-instagram"></i></a>
+      <a href="#"><i class="icon ion-social-snapchat"></i></a>
+      <a href="#"><i class="icon ion-social-twitter"></i></a>
+      <a href="#"><i class="icon ion-social-facebook"></i></a>
+    </div>
+
+    <ul class="li">
+      <li>HOME</li>
+      <li>ACCOUNT</li>
+      <li>ABOUT</li>
+    </ul>
+    <p class="copyright">© 2021</p>
+  </footer>
+</div>
 </html>
